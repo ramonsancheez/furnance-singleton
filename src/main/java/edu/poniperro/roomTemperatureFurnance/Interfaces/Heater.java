@@ -1,5 +1,8 @@
 package edu.poniperro.roomTemperatureFurnance.Interfaces;
 
+import edu.poniperro.roomTemperatureFurnance.types.RoomTemperature;
+
 public interface Heater {
-    void regulate(thermometer, yoda, minTemp, maxTemp, temperature);
+    void heatUp(RoomTemperature temperature);
+    void coolDown(RoomTemperature temperature);
 }
