@@ -1,5 +1,7 @@
 package edu.poniperro.roomTemperatureFurnance.Interfaces;
 
-public interface Thermometer {
+import edu.poniperro.roomTemperatureFurnance.types.RoomTemperature;
 
+public interface Thermometer {
+    double getTemperature(RoomTemperature temperature);
 }
