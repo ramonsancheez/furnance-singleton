@@ -1,6 +1,7 @@
 package edu.poniperro.roomTemperatureFurnance.types;
 
 public class RoomTemperature {
+
     private double temperature = 0;
     private static RoomTemperature instance = null;
 
@@ -12,6 +13,9 @@ public class RoomTemperature {
             instance = new RoomTemperature();
         }
         return instance;
+    }
+    public double getTemperature() {
+        return temperature;
     }
     public void setTemperature(double temperature) {
         this.temperature = temperature;
